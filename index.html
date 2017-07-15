@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title>Mon appli météo></title>
+
+	<!-- police from Google -->
+	<link href="https://fonts.googleapis.com/css?family=Merriweather|Raleway" rel="stylesheet">
+	<!-- stylesheets : "weather-icons" d'Erik Flowers and personal CSS -->
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header>
+		<h1>Application de météo de oufs !</h1>
+	</header>
+	<main>
+		<!-- formulaire destiné à envoyer la requête ajax -->
+		<form id="weather-query" method="GET" action="">
+			<input type="text" name="ville" id="ville" placeholder="Entrer une ville">
+			<button type="submit">Charger !</button>
+
+		</form>
+
+		<!-- structure qui recevra les infos de la requête -->
+		<div id="meteo">
+			<p id="msg"></p>
+
+			<div id="temps">
+				<i></i>
+			</div>
+
+			<div id="temperature">
+				<span id="ville-trouvee"></span>Il fait <span class="degres"></span> degrés !
+			</div>	
+
+		</div>
+
+	</main>
+	<!-- Appel JQuery et script personnel -->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

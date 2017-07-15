@@ -1,0 +1,43 @@
+body{
+	background: black;
+	color: white;
+	text-align: center;
+	font-family: 'Raleway', sans-serif;
+}
+
+form{
+	margin: 0 auto;
+}
+
+h1{
+	font-family: 'Merriweather', serif;
+}
+
+button{
+	background-color: navy;
+	border: solid 2px blue;
+	padding: 0.3rem;
+	border-radius : 5px;
+	color: inherit;
+}
+
+.red-border{
+	border: solid 2px firebrick;
+}
+
+div{
+	margin: 10px;
+}
+
+#ville{
+	padding: 0.3rem;
+	border-radius : 5px;
+}
+
+i.wi{
+	transform:scale(2);
+}
+
+div#temperature{
+	display:none;
+}
